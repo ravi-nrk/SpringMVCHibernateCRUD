@@ -25,10 +25,12 @@ public class EmployeeController {
 
 	public EmployeeController() {
 		System.out.println("EmployeeController()");
+		System.out.println("Demo Purpose");
 	}
 
 	@Autowired
 	private EmployeeService employeeService;
+	
 	
 	@RequestMapping(value = "/search", method = RequestMethod.GET,produces="application/json")
 	public @ResponseBody List<Employee> newContt(ModelAndView model,HttpServletRequest requst,HttpServletResponse response) {
